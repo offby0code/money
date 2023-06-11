@@ -19,7 +19,7 @@ that fullfills finance industry requirements. This should be checked before goin
 Solution is developed as testable as possible using functional and clear style avoiding inner state
 and hard and complex class hierarchies and object graphs.
 
-Solution is possible to wrap in containers and uploaded to ECS or other container run environment.
+Solution is possible to wrap in docker and be uploaded to ECS or other container run environment.
 
 To run app:
 
