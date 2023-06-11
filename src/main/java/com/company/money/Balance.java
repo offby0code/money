@@ -10,4 +10,8 @@ public class Balance {
     public LocalDate date;
     //monthly balances for UI in form 01/2021 12,00
     public List<String> monthlyBalancesToDate;
+
+    public String cumulativeAmountToDate(){
+        return (cumulativeAmountToDate / 100) + "," + (cumulativeAmountToDate % 100);
+    }
 }

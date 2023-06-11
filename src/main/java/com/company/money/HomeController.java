@@ -17,7 +17,7 @@ public class HomeController {
         if (principal != null) {
             model.addAttribute("profile", principal.getClaims());
             //using email hashcode as customerId for mocking purpose of transactionAPI
-            model.addAttribute("data", AppLogic.fetchCustomerBalances(principal.getEmail().hashCode()));
+            model.addAttribute("balances", AppLogic.fetchCustomerBalances(principal.getEmail().hashCode()));
         }
         return "index";
     }

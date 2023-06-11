@@ -7,6 +7,3 @@ logging:
     org.springframework.web: ERROR
     com.auth0.example: TRACE
 
-spring:
-  security:
-    
