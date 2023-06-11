@@ -24,9 +24,15 @@ Solution is possible to wrap in containers and uploaded to ECS or other containe
 To run app:
 
 Copy from email message to file application.yml
+
 client-id
+
 client-secret
+
 issuer-uri
+
 Save file! :D
+
 Run command gradlew.bat bootRun
+
 Go to localhost:3000
