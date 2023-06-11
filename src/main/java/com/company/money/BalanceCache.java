@@ -25,7 +25,7 @@ public class BalanceCache {
         customerBalances.put(customerId, balance);
     }
 
-    //balances  in format month/year balance
+    //balances in format month/year balance
     public static Balance readMonthlyBalances(int customerId){
         return customerBalances.get(customerId);
     }

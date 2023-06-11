@@ -26,7 +26,7 @@ public class mockTransactionAPI {
         for (int i = 0; i < days; i++){
             date = firstTransaction.plusDays(i);
             int transactionsPerDay = random.nextInt(100);
-            for (int j = 0; i < transactionsPerDay; j++){
+            for (int j = 0; j < transactionsPerDay; j++){
                 Transaction transaction = new Transaction();
                 transaction.date = date;
                 int amount = random.nextInt(500);
