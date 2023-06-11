@@ -16,7 +16,8 @@ public class HomeController {
     public String home(Model model, @AuthenticationPrincipal OidcUser principal) {
         if (principal != null) {
             model.addAttribute("profile", principal.getClaims());
-            model.addAttribute("data", "123");
+            //using email hashcode as customerId for mocking purpose of transactionAPI
+            model.addAttribute("data", AppLogic.fetchCustomerBalances(principal.getEmail().hashCode()));
         }
         return "index";
     }
