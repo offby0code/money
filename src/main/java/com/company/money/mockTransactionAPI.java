@@ -4,8 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-import com.company.money.Transaction;
-
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 
@@ -29,7 +27,7 @@ public class mockTransactionAPI {
             for (int j = 0; j < transactionsPerDay; j++){
                 Transaction transaction = new Transaction();
                 transaction.date = date;
-                int amount = random.nextInt(500);
+                int amount = random.nextInt(50000);
                 //just simple logic for mock purposes. In future could develop better parameters from real data 
                 if (balance > amount){
                     amount = -1 * amount;
@@ -39,7 +37,6 @@ public class mockTransactionAPI {
                 transactions.add(transaction);
             }
         }
-
         return transactions;
     }
 }

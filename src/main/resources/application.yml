@@ -7,3 +7,19 @@ logging:
     org.springframework.web: ERROR
     com.auth0.example: TRACE
 
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          auth0:
+            client-id: 
+            client-secret: 
+            scope:
+              - openid
+              - profile
+              - email
+        provider:
+          auth0:
+            # trailing slash is important!
+            issuer-uri: https://dev-dtv3sz1o5omb6m5h.us.auth0.com/

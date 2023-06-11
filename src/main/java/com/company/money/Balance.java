@@ -12,6 +12,6 @@ public class Balance {
     public List<String> monthlyBalancesToDate;
 
     public String cumulativeAmountToDate(){
-        return (cumulativeAmountToDate / 100) + "," + (cumulativeAmountToDate % 100);
+        return (cumulativeAmountToDate / 100) + "," + (Math.abs(cumulativeAmountToDate) % 100);
     }
 }
