@@ -14,12 +14,12 @@ public class BalanceCache {
     public static LocalDate balanceDate;
     public static int balance;
 
-    public static void updateCache(List<Transaction> transactions){
+    public static void updateCache(int customerId, List<Transaction> transactions){
 
     }
 
     //balances  in format month/year balance
-    public static List<String> readMonthlyBalances(){
+    public static List<String> readMonthlyBalances(int customerId){
         return monthlyBalances;
     }
 
